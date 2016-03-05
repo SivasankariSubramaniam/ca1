@@ -31,6 +31,7 @@ public class Booking {
 		this.endDate = endDate;
 	}
 	
+	@SuppressWarnings("deprecation")
 	public boolean overlap(Booking bookingToCompare) {
 		SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 		sdf.format(new Date(getStartDate()));
